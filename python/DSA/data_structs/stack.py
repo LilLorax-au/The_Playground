@@ -10,7 +10,7 @@ class Stack:
         self.elements.append(element)
 
     def pop(self):
-        if self.__is_empty():
+        if self.is_empty():
             raise IndexError("Stack is empty")
         else:
             return self.elements.pop()
@@ -21,7 +21,7 @@ class Stack:
     def __len__(self):
         return len(self.elements)
 
-    def __is_empty(self):
+    def is_empty(self):
         if len(self.elements) == 0:
             return True
         else:
