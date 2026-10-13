@@ -1,11 +1,14 @@
 from data_structs import Stack
-
+from data_structs.linked_list import SinglyLinkedList
 
 
 def main():
-    test_stack()
+    
 
     return 0
+
+def test_singly_linked_list():
+    L = SinglyLinkedList()
 
 def test_stack():
     plates = Stack()
